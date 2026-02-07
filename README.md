@@ -41,8 +41,8 @@ GitHub Pages URLs include your username by default. To get a cleaner URL like `r
 1. **Buy a domain** from providers like:
    - Namecheap (~$10/year)
    - GoDaddy
-   - Google Domains
    - Porkbun
+   - Squarespace Domains (formerly Google Domains)
    
    Examples you could buy:
    - `rose-day-wish-mehak-sharma.com`
@@ -70,9 +70,9 @@ GitHub Pages URLs include your username by default. To get a cleaner URL like `r
 ### Option 2: Use a Free Subdomain Service
 
 Services like:
-- **Freenom** - Free domains (.tk, .ml, .ga, .cf, .gq)
 - **is-a.dev** - Free subdomains for developers
 - **js.org** - Free subdomains for JavaScript projects
+- **netlify.app** - Free hosting with custom subdomains
 
 These let you get custom URLs without purchasing a domain.
 
