@@ -1,153 +1,52 @@
-# Rose-day-wish.-Mehak-sharma
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rose Day Introduction for Mehak Sharma</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ffcccc, #ff9999);
-            color: #d63384;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        .teaser {
-            font-size: 1.2em;
-            margin: 20px 0;
-            opacity: 1;
-            transition: opacity 1s;
-        }
-        .message {
-            font-size: 1.8em;
-            margin: 20px 0;
-            opacity: 0;
-            animation: none;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            transition: opacity 1s;
-        }
-        .message.revealed {
-            opacity: 1;
-            animation: sparkle 2s infinite alternate;
-        }
-        .buttons {
-            margin-top: 30px;
-        }
-        button {
-            background: #e91e63;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            margin: 10px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-        .heart {
-            font-size: 3em;
-            animation: pulse 1s infinite;
-            margin-bottom: 20px;
-        }
-        /* Falling Roses Animation */
-        .rose {
-            position: absolute;
-            top: -10px;
-            width: 20px;
-            height: 20px;
-            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDJDOCuNSAyIDggNC41IDggN0M4IDkuNSAxMCAxMiAxMCAxMkMxMCAxMiAxMiA5LjUgMTIgN0MxMiA0LjUgMTAuNSAyIDEwIDJaIiBmaWxsPSIjZmYwMDAwIi8+CjxwYXRoIGQ9Ik04IDdMNjkgOUwxMCAxMkwxMSAxMUwxMSAxMkwxMSAxM0wxMyAxMUwxMSA5WiIgZmlsbD0iI2ZmMDAwMCIvPgo8L3N2Zz4=') no-repeat center;
-            animation: fall linear infinite;
-        }
-        .rose:nth-child(1) { left: 10%; animation-duration: 5s; }
-        .rose:nth-child(2) { left: 20%; animation-duration: 6s; }
-        .rose:nth-child(3) { left: 30%; animation-duration: 7s; }
-        .rose:nth-child(4) { left: 40%; animation-duration: 8s; }
-        .rose:nth-child(5) { left: 50%; animation-duration: 9s; }
-        .rose:nth-child(6) { left: 60%; animation-duration: 10s; }
-        .rose:nth-child(7) { left: 70%; animation-duration: 11s; }
-        .rose:nth-child(8) { left: 80%; animation-duration: 12s; }
-        .rose:nth-child(9) { left: 90%; animation-duration: 13s; }
-        @keyframes fall {
-            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes sparkle {
-            0% { text-shadow: 0 0 5px #d63384; }
-            50% { text-shadow: 0 0 20px #d63384, 0 0 30px #d63384, 0 0 40px #fff; }
-            100% { text-shadow: 0 0 5px #d63384; }
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-    </style>
-</head>
-<body>
-    <!-- Falling Roses -->
-    <div class="rose"></div>
-    <div class="rose"></div>
-    <div class="rose"></div>
-    <div class="rose"></div>
-    <div class="rose"></div>
-    <div class="rose"></div>
-    <div class="rose"></div>
-    <div class="rose"></div>
-    <div class="rose"></div>
+# 🌹 Rose Day Wish for Mehak Sharma 🌹
 
-    <!-- Main Content -->
-    <div class="heart">❤️</div>
-    <h1>Happy Rose Day!</h1>
-    <p class="teaser">A special introduction awaits...</p>
-    <p class="message" id="introMessage">My darling, my madam ji, my machine Mehak Sharma</p>
-    <div class="buttons">
-        <button onclick="revealIntroduction()">Reveal the Introduction</button>
-        <button onclick="sendRoses()">Send Virtual Roses</button>
-    </div>
+A beautiful, animated Rose Day greeting page with the special introduction: **"My darling, my madam ji, my machine Mehak Sharma"**
 
-    <script>
-        function revealIntroduction() {
-            const message = document.getElementById('introMessage');
-            const teaser = document.querySelector('.teaser');
-            teaser.style.opacity = '0'; // Hide teaser
-            message.classList.add('revealed'); // Reveal with sparkle
-            setTimeout(() => {
-                alert('Introducing the love of my life! 💕'); // Optional fun alert
-            }, 1000);
-        }
-        function sendRoses() {
-            alert('Virtual roses sent! 🌹🌹🌹 More petals falling just for you!');
-            // Add extra roses dynamically for fun
-            for (let i = 0; i < 5; i++) {
-                const newRose = document.createElement('div');
-                newRose.className = 'rose';
-                newRose.style.left = Math.random() * 90 + '%';
-                newRose.style.animationDuration = (Math.random() * 5 + 5) + 's';
-                document.body.appendChild(newRose);
-            }
-        }
-    </script>
-</body>
-</html>
+## 🌐 Live Website
+
+**View the live page here:** [https://cha0021officersc.github.io/Rose-day-wish.-Mehak-sharma/](https://cha0021officersc.github.io/Rose-day-wish.-Mehak-sharma/)
+
+## ✨ Features
+
+- 💕 **Animated falling rose petals** - Romantic roses continuously falling across the screen
+- ❤️ **Pulsing heart emoji** - A beating heart to show the love
+- ✨ **Sparkle animation** - The introduction text sparkles when revealed
+- 🎯 **Interactive buttons**:
+  - "Reveal the Introduction" - Shows the special message with sparkle effect
+  - "Send Virtual Roses" - Sends virtual roses and adds more falling petals
+- 🎨 **Beautiful gradient background** - Romantic pink gradient (#ffcccc → #ff9999)
+- 📱 **Responsive design** - Works perfectly on all devices
+
+## 🚀 How to Enable GitHub Pages
+
+If the live link above doesn't work yet, follow these steps to enable GitHub Pages:
+
+1. Go to your repository on GitHub: [https://github.com/cha0021officersc/Rose-day-wish.-Mehak-sharma](https://github.com/cha0021officersc/Rose-day-wish.-Mehak-sharma)
+2. Click on **Settings** (top menu)
+3. Scroll down to **Pages** (in the left sidebar under "Code and automation")
+4. Under **Source**, select **Deploy from a branch**
+5. Under **Branch**, select **`main`** (or your default branch) and **`/ (root)`**
+6. Click **Save**
+7. Wait a few minutes for GitHub to build and deploy your site
+8. The live link will be: **https://cha0021officersc.github.io/Rose-day-wish.-Mehak-sharma/**
+
+## 📝 Local Development
+
+To view the page locally:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/cha0021officersc/Rose-day-wish.-Mehak-sharma.git
+   ```
+
+2. Open `index.html` in your web browser
+
+## 💖 About
+
+This is a special Rose Day greeting page created to introduce Mehak Sharma with love and care. The page features beautiful animations and interactive elements to make the introduction memorable.
+
+**The special introduction:** "My darling, my madam ji, my machine Mehak Sharma"
+
+---
+
+Made with ❤️ for Rose Day 🌹
