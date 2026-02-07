@@ -4,7 +4,7 @@ A beautiful, animated Rose Day greeting page with the special introduction: **"M
 
 ## 🌐 Live Website
 
-**View the live page here:** [https://cha0021officersc.github.io/Rose-day-wish.-Mehak-sharma/](https://cha0021officersc.github.io/Rose-day-wish.-Mehak-sharma/)
+**View the live page here:** [https://rose-day-wish-mehak-sharma.github.io/](https://rose-day-wish-mehak-sharma.github.io/)
 
 ## ✨ Features
 
@@ -17,18 +17,40 @@ A beautiful, animated Rose Day greeting page with the special introduction: **"M
 - 🎨 **Beautiful gradient background** - Romantic pink gradient (#ffcccc → #ff9999)
 - 📱 **Responsive design** - Works perfectly on all devices
 
-## 🚀 How to Enable GitHub Pages
+## 🚀 How to Set Up Custom Domain for GitHub Pages
 
-If the live link above doesn't work yet, follow these steps to enable GitHub Pages:
+To use the custom domain `rose-day-wish-mehak-sharma.github.io`, follow these steps:
 
-1. Go to your repository on GitHub: [https://github.com/cha0021officersc/Rose-day-wish.-Mehak-sharma](https://github.com/cha0021officersc/Rose-day-wish.-Mehak-sharma)
-2. Click on **Settings** (top menu)
-3. Scroll down to **Pages** (in the left sidebar under "Code and automation")
-4. Under **Source**, select **Deploy from a branch**
-5. Under **Branch**, select **`main`** (or your default branch) and **`/ (root)`**
-6. Click **Save**
-7. Wait a few minutes for GitHub to build and deploy your site
-8. The live link will be: **https://cha0021officersc.github.io/Rose-day-wish.-Mehak-sharma/**
+### Option 1: Using a Custom Subdomain (Recommended)
+
+1. **Register a domain** (if you want a completely custom URL like `rose-day-wish-mehak-sharma.com`)
+   - Purchase from providers like Namecheap, GoDaddy, Google Domains, etc.
+   
+2. **Configure GitHub Pages:**
+   - Go to your repository on GitHub
+   - Click on **Settings** (top menu)
+   - Scroll to **Pages** (in the left sidebar)
+   - Under **Source**, select **Deploy from a branch**
+   - Under **Branch**, select your main branch and **`/ (root)`**
+   - Under **Custom domain**, enter: `rose-day-wish-mehak-sharma.github.io` (or your purchased domain)
+   - Click **Save**
+   
+3. **Configure DNS** (if using your own domain):
+   - Add a CNAME record pointing to `rose-day-wish-mehak-sharma.github.io`
+   - Wait for DNS propagation (can take up to 48 hours)
+
+### Option 2: Simple GitHub Pages Setup
+
+If you prefer to keep using GitHub's subdomain:
+
+1. Go to Settings → Pages in your repository
+2. Select "Deploy from a branch"
+3. Choose your main branch and root folder
+4. The CNAME file will automatically configure the custom domain
+5. Wait 2-3 minutes for deployment
+6. Visit: **https://rose-day-wish-mehak-sharma.github.io/**
+
+**Note:** The CNAME file in this repository is pre-configured for the custom URL.
 
 ## 📝 Local Development
 
@@ -40,6 +62,8 @@ To view the page locally:
    ```
 
 2. Open `index.html` in your web browser
+
+Or simply visit the live site at: **https://rose-day-wish-mehak-sharma.github.io/**
 
 ## 💖 About
 
